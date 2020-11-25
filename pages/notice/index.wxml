@@ -1,0 +1,6 @@
+<!--pages/notice/index.wxml-->
+<cu-custom isCustom="{{false}}">
+    <view slot="content">提示</view>
+</cu-custom>
+
+你的账号已经被禁用

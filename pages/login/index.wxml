@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="index" wx:if="{{!isStop}}">
+    <image src="{{bgImage}}" class="bg"></image>
+    <v-text inner-text="善易者不占" class="title-b"></v-text>
+     <v-text inner-text="知易者,不占而知" class="title-f"></v-text>
+     
+    <button class="enter-btn" style="width:30vw;padding:1vw" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">游境</button>
+    
+  </view>
+  <view wx:if="{{isStop}}">停机中</view>
+</view>

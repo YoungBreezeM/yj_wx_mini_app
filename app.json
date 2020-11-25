@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/index/index",
+    "pages/about/home/index",
+    "pages/gua/index",
+    "pages/resove/index",
+    "pages/question/index",
+    "pages/details/index",
+    "pages/info/index",
+    "pages/attention/index",
+    "pages/notice/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarTitleText": "不易卦",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#c1c8bb",
+    "selectedColor": "#090265",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "/static/icon/home-hover.png",
+        "iconPath": "/static/icon/home.png"
+      },
+      {
+        "pagePath": "pages/gua/index",
+        "text": "卜卦",
+        "selectedIconPath": "/static/icon/admin-hover.png",
+        "iconPath": "/static/icon/admin.png"
+      },
+      {
+        "pagePath": "pages/resove/index",
+        "text": "解惑",
+        "selectedIconPath": "/static/icon/admin-hover.png",
+        "iconPath": "/static/icon/admin.png"
+      },
+      {
+        "pagePath": "pages/about/home/index",
+        "text": "我的",
+        "selectedIconPath": "/static/icon/admin-hover.png",
+        "iconPath": "/static/icon/admin.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

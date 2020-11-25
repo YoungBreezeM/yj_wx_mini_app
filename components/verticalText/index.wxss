@@ -1,0 +1,9 @@
+/* component/verticalText/verticalText.wxss */
+.verticalText{
+  border: 1px solid rgba(26, 25, 26, 0.90);
+  border-radius: 10vh;
+  width: 20px;
+  text-align: center;
+  padding: 1vw;
+  font-size: 3vw;
+}

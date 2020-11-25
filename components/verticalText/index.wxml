@@ -1,0 +1,6 @@
+<!--component/verticalText/verticalText.wxml-->
+<view class="verticalText">
+  <view wx:for="{{innerText}}" >
+    {{item}}
+  </view>
+</view>

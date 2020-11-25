@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "v-text": "../../components/verticalText/index"
+  }
+}

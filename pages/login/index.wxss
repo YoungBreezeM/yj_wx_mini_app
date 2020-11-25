@@ -1,0 +1,31 @@
+/**index.wxss**/
+.index{
+  width: 100%;
+  height: 100vh;
+}
+
+.bg{
+  width: 100%;
+  height: 100vh;
+
+}
+.enter-btn{
+  position: absolute;
+  bottom: 10vh;
+  left: 35vw;
+  color: rgba(26, 25, 26, 0.90);
+  border-radius: 15vw;
+  border: 2px solid rgba(26, 25, 26, 0.90);
+  
+}
+.title-b{
+  position: absolute;
+  top: 35vh;
+  left: 59vw;
+}
+
+.title-f{
+  position: absolute;
+  top: 35vh;
+  left: 70vw;
+}

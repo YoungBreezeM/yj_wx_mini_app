@@ -1,0 +1,83 @@
+<wxs src="../../utils/tools.wxs" module="tools" />
+<cu-custom isCustom="{{true}}">
+  <view slot="content">评论</view>
+</cu-custom>
+
+<view class="cu-card dynamic isCard">
+  <view class="cu-item shadow">
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url({{questionAnswers.questionClient.client.avatarUrl}});"></view>
+        <view class="content flex-sub">
+          <view>{{questionAnswers.questionClient.client.nickName}}</view>
+          <view class="text-gray text-sm flex justify-between">
+            {{tools.tsFormatTime(questionAnswers.questionClient.questions.time)}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="text-content">
+      {{questionAnswers.questionClient.questions.content}}
+    </view>
+    <view class="grid flex-sub padding-lr {{questionAnswers.questionClient.imgList.length>1?'col-3 grid-square':'col-1'}}">
+      <view
+              class="bg-img {{questionAnswers.questionClient.imgList.length>1?'':'only-img'}}"
+              style="background-image:url({{host+item}});"
+              wx:for="{{questionAnswers.questionClient.imgList}}" wx:key="{{index}}"
+              bindtap="ViewImage" data-url="{{host+item}}"
+      >
+      </view>
+    </view>
+    <view class="text-gray text-sm text-right padding">
+    </view>
+    <view class="cu-list menu-avatar comment solids-top">
+      <!-- 暂无评论 -->
+      <view class="no-content" wx:if="{{!questionAnswers.answerClients.length}}">
+        <image src="{{noContentImage}}"></image>
+        <view class="text-xl padding">暂无评论</view>
+      </view>
+      <view class="cu-item" wx:for="{{questionAnswers.answerClients}}">
+        <view class="cu-avatar round" style="background-image:url({{item.client.avatarUrl}});"></view>
+        <view class="content">
+          <view class="text-grey">{{item.client.nickName}}</view>
+          <view class="text-gray text-content text-df">
+            {{item.answer.content}}
+          </view>
+          <view class="margin-top-sm flex justify-between">
+            <view class="text-gray text-df">{{tools.tsFormatTime(item.answer.time)}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="text-df text-center text-grey " bindtap="loadComment">加载更多</view>
+    </view>
+  </view>
+</view>
+<!-- 发表评论、点赞、转发 -->
+<view class="cu-bar tabbar shadow foot" style="background: white;" wx:if="{{!isComment}}">
+  <view class="search-form round comment" style="width:400rpx;">
+    <text class="cuIcon-write"></text>
+    <input type="text" placeholder="我来评论..." bindtap="addComment" data-target="commentModal" data-pid="0" data-prompt="评论博文" disabled="true"></input>
+  </view>
+  <view class="cu-capsule round">
+      <view class="cu-tag bg-blue ">
+        <text class="cuIcon-recharge"></text>
+      </view>
+      <view class="cu-tag line-blue">
+        {{questionAnswers.questionClient.questions.integral}}
+      </view>
+    </view>
+  <view class="action">
+    <view class='cuIcon-cu-image'>
+      <image src="/static/images/icon/share.png" bindtap="share" data-gid='{{id}}'></image>
+    </view>
+  </view>
+</view>
+
+<!-- 发布评论 -->
+<view class="cu-bar tabbar shadow foot" style="background: white;height:100px" wx:if="{{isComment}}">
+  <view class="cu-form-group commit-input">
+    <textarea maxlength="200" bindinput="textareaAInput"  placeholder="输入评论"></textarea>
+    <button class="cu-btn block line-cyan round margin-left" bindtap="pushComment">评论</button>
+  </view>
+</view>
+

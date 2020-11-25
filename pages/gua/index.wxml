@@ -1,0 +1,72 @@
+<!--index.wxml-->
+
+<import src="../../wxParse/wxParse.wxml" />
+
+<view class="nav-header" style="height:{{navHeight*1.5}}px">
+</view>
+<view class="index">
+  <view class="gua">
+    <view wx:if="{{!gua[top]}}" class="shake-title">善易者不占，知易者不占而知！</view>
+    <view wx:if="{{!gua[top]}}" class="shake-title">信则灵，不信则不灵</view>
+    <view wx:if="{{!gua[top]}}" class="shake-title">心诚则灵!</view>
+    <view wx:if="{{!gua[top]}}" class="shake-title">一直摇，直到声音结束!</view>
+    <view class="{{gua[top]?'top':''}}">
+      {{gua[top]?"上"+gua[top]:gua[top]}}
+      <view class="graph" wx:for="{{guaGraph[top]}}">
+        <view wx:if="{{item==1}}" class="yangyao"></view>
+        <view wx:if="{{item==0}}" style="display: flex;">
+          <view class="yingyao"></view>
+          <view class="yingyao"></view>
+        </view>
+      </view>
+    </view>
+    <view class="{{gua[bottom]?'bottom':''}}">
+      {{gua[bottom]?"下"+gua[bottom]:gua[bottom]}}
+      <view class="graph" wx:for="{{guaGraph[bottom]}}">
+        <view wx:if="{{item==1}}" class="yangyao"></view>
+        <view wx:if="{{item==0}}" style="display: flex;">
+          <view class="yingyao"></view>
+          <view class="yingyao"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button bindtap="resize" class="resize" style="width:35vw;">重新起卦</button>
+  <view class="gua-content" wx-if="{{baseGua}}">
+    <text>{{baseGua.guaName}}</text>
+    <view class="detail" bindtap="toDetail">详解</view>
+  </view>
+</view>
+<van-popup show="{{ show }}" closeable position="bottom" custom-style="height: 90%" bind:close="onClose">
+  <view class="article-content">
+    <van-tabs type="card" wx:if="{{ show }}" active="{{ 0 }}" bind:change="onChange">
+      <van-tab title="卦词">
+        <view class="tab-c">
+          <template is="wxParse" data="{{wxParseData:guaText.nodes}}" />
+        </view>
+      </van-tab>
+      <van-tab title="爻词">
+        <view class="tab-c">
+          <view wx-if="{{yao}}">
+            <template is="wxParse" data="{{wxParseData:yaoText.nodes}}" />
+          </view>
+          <view wx-if="{{!yao}}">
+            未解爻词,以卦词为解
+          </view>
+        </view>
+      </van-tab>
+      <van-tab title="解卦">
+        <view class="tab-c">
+          <button bindtap="changeCategory" wx-if="{{!prediction}}">选择类别</button>
+          <button bindtap="resolveGua" wx-if="{{prediction}}">解卦</button>
+          <template is="wxParse" data="{{wxParseData:predictionText.nodes}}" />
+          <van-popup show="{{ preShow }}" closeable position="bottom" custom-style="height: 30%" bind:close="onClosePre">
+            <view class="article-content">
+              <van-picker columns="{{  predictionCategory }}" default-index="{{ 0 }}" bind:change="onCategoryChange" />
+            </view>
+          </van-popup>
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+</van-popup>

@@ -1,0 +1,9 @@
+/* pages/info/index.wxss */
+.list-container {
+  height:95%;
+}
+
+.tab-content{
+  height: 75vh;
+  
+}

@@ -1,0 +1,4 @@
+/* colorui/components/cu-custom.wxss */
+.bg{
+  background: linear-gradient(to bottom right, #e66465, #9198e5);
+}
