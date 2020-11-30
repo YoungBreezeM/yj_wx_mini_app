@@ -1,6 +1,16 @@
 /* pages/resove/index.wxss */
-.bar-category{
-  margin-top: 10px;
- 
+.links-list{
+  width: 100%;
 }
 
+.links-item{
+  width: 40%;
+  height: 10vh;
+  float: left;
+  margin: 5% 5%;
+  border-radius: 5px;
+  line-height: 10vh;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  background: black;
+}

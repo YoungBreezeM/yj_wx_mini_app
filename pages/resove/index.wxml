@@ -1,18 +1,10 @@
 <!--pages/resove/index.wxml-->
-<view class="nav-header" style="height:{{navHeight*1.5}}px">
-</view>
+<cu-custom isCustom="{{false}}">
+    <view slot="content">解惑</view>
+</cu-custom>
 
-<view class="bar-category">
- <parser html="{{content}}"
-    gesture-zoom
-    lazy-load
-    selectable
-    show-with-animation
-    use-anchor
-    use-cache
-    tag-style="{{parserStyle}}"
-    binderror="error"
-    bindlinkpress="linkpress">
-    </parser>
-</view>
-
+ <view class="links-list" wx:for="{{list}}">
+     <view class="links-item text-center shadow-warp text-white " bindtap="toView" data-url="{{item.url}}">
+         {{item.title}}
+     </view>
+  </view>

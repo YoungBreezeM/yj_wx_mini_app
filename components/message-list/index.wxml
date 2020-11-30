@@ -1,0 +1,38 @@
+<wxs src="../../utils/tools.wxs" module="tools"/>
+<view class="cu-card dynamic article {{isCard?'no-card':'isCard'}}">
+    <view class="cu-item shadow">
+        <view class="cu-list menu-avatar ">
+            <view class="cu-item" >
+                <view class="cu-avatar round lg"
+                      style="background-image:url({{client.avatarUrl}});" bindtap="toUserInfo" data-id="{{client.id}}">
+                </view>
+                <view class="content flex-sub">
+                    <view>{{client.nickName}}</view>
+                    <view class="text-gray text-sm flex justify-between">
+                        {{tools.tsFormatTime(answer.time)}}
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="text-content">
+            {{answer.content}}
+        </view>
+         <view class="content">
+            <image src="{{url}}" mode="aspectFill"></image>
+            <view class="desc">
+                <view class="text-content">{{question.content}}</view>
+                <view>
+                    <view class="cu-tag bg-red light sm round">
+                      <text class="cuIcon-attentionfill margin-lr-xs"></text>
+                      {{question.watch?question.watch:0}}
+                    </view>
+                    <view class="cu-tag bg-green light sm round">
+                      <text class="cuIcon-recharge margin-lr-xs"></text>
+                      {{question.integral}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+

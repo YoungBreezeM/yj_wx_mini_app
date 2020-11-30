@@ -1,24 +1,23 @@
 import apiResult from './api-result';
 
-let { Config }  = require("../config/api.js") 
+let { Config }  = require("../config/api.js")
 
 console.log(Config.AccessKey)
 
-function Get(url) {
+function Get(url,token=null) {
   return new Promise((resolve, reject) => {
     wx.request({
       url: url,
       method: 'GET',
       header: {
         'Content-Type': 'application/json',
-        'API-Authorization': Config.AccessKey
+        'API-Authorization':token?token:Config.AccessKey
       },
       success(res) {
         if (res.data.code === apiResult.StateCode.success) {
           resolve(res.data)
         } else {
           apiResult.requestError(res.data);
-          reject(res.data)
         }
       },
       fail(err) {
@@ -44,7 +43,6 @@ function Post(url, data = {}) {
           resolve(res.data)
         } else {
           apiResult.requestError(res.data);
-          reject(res.data)
         }
       },
       fail(err) {
@@ -53,7 +51,7 @@ function Post(url, data = {}) {
       }
     })
   });
-  
+
 }
 
 function PostBody(url, data = {}) {
@@ -71,7 +69,7 @@ function PostBody(url, data = {}) {
           resolve(res.data)
         } else {
           apiResult.requestError(res.data);
-          reject(res.data)
+        
         }
       },
       fail(err) {
@@ -80,13 +78,13 @@ function PostBody(url, data = {}) {
       }
     })
   });
-  
+
 }
 
 function Upload(url, data = {}) {
   return new Promise((resolve, reject) => {
     wx.uploadFile({
-      url: url, 
+      url: url,
       filePath: data,
       name: 'file',
       header: {
@@ -99,7 +97,7 @@ function Upload(url, data = {}) {
           resolve(JSON.parse(res.data))
         } else {
           apiResult.requestError(JSON.parse(res.data));
-          reject(JSON.parse(res.data))
+        
         }
       },
       fail(err) {
@@ -108,7 +106,7 @@ function Upload(url, data = {}) {
       }
     })
   });
-  
+
 }
 
 function Delete(url, data = {}) {
@@ -126,7 +124,7 @@ function Delete(url, data = {}) {
           resolve(res.data)
         } else {
           apiResult.requestError(res.data);
-          reject(res.data)
+       
         }
       },
       fail(err) {
@@ -152,7 +150,7 @@ function Put(url, data = {}) {
           resolve(res.data)
         } else {
           apiResult.requestError(res.data);
-          reject(res.data)
+          
         }
       },
       fail(err) {
@@ -161,7 +159,7 @@ function Put(url, data = {}) {
       }
     })
   });
-  
+
 }
 
 module.exports = {

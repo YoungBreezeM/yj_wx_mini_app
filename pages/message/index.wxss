@@ -1,0 +1,8 @@
+/* pages/message/index.wxss */
+.list-container {
+    height:90%;
+}
+
+.tab-content{
+  height: 90vh;
+}

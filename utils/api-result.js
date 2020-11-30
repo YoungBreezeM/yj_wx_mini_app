@@ -1,4 +1,7 @@
+
 function requestError(data) {
+
+
   wx.showToast({
     title: data.msg,
     duration:1200,
@@ -7,11 +10,10 @@ function requestError(data) {
   });
 
   if (data.code === 500) {
-    // let pages = getCurrentPages();
-    // let current_page = pages[pages.length - 1].route
-    // wx.navigateTo({
-    //   url: "/pages/admin/login/index"
-    // })
+    wx.clearStorageSync("token");
+    wx.reLaunch({
+      url: '/pages/login/index',
+    })
   }
 }
 

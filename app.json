@@ -9,7 +9,10 @@
     "pages/details/index",
     "pages/info/index",
     "pages/attention/index",
-    "pages/notice/index"
+    "pages/webview/index",
+    "pages/about/question/index",
+    "pages/questioneditor/index",
+    "pages/message/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ccc",

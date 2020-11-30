@@ -1,7 +1,7 @@
 <wxs src="../../utils/tools.wxs" module="tools"/>
 <view class="nav-bar" style="height:{{navHeight*2}}px">
     <view class="nav-module padding-sm" style="top:{{navHeight}}px">
-        <view class="bg-cyan radius shadow-warp">
+        <view class="bg-black radius shadow-warp">
             <view class="flex  padding-sm justify-start">
                 <view class="margin-xs radius">
                     <view class="cu-avatar round lg" style="background-image:url({{userInfo.avatarUrl}});"></view>
@@ -14,17 +14,13 @@
                         <text class="cuIcon-favorfill lg text-white" ></text>
                         <text>关注</text>
                     </view>
-                    <view class=" margin-xs radius">
-                        <text class="cuIcon-comment lg text-white"></text>
-                        <text>消息</text>
-                    </view>
                 </view>
             </view>
         </view>
     </view>
 </view>
-<view class="body padding-sm" style="height:90vh;top:{{navHeight*2+10}}px">
-    <scroll-view scroll-x style="border-top-left-radius: 5px;border-top-right-radius: 5px;" class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+<view class="body margin-sm" style="height:75vh;top:{{navHeight*2+10}}px">
+     <scroll-view scroll-x style="border-top-left-radius: 5px;border-top-right-radius: 5px;" class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
         <view class="flex text-center">
             <view class="cu-item flex-sub {{item.id==TabCur?'text-cyan cur':''}}" wx:for="{{categoryList}}" wx:key bindtap="tabSelect" data-id="{{item.id}}">
                 {{item.categoryName}}
@@ -49,7 +45,7 @@
             </article-list>
         </block>
 
-    </pull-refresh-view>
+    </pull-refresh-view> 
 </view>
 <view class="push-btn">
     <van-icon name="add" bindtap="pushInfo" />

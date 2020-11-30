@@ -1,0 +1,27 @@
+
+<cu-custom isCustom="{{true}}">
+    <view slot="content">消息</view>
+</cu-custom>
+<view class="tab-content">
+    <!-- 默认样式 -->
+    <pull-refresh-view class="list-container"
+                       bindonrefresh="onRefresh"
+                       refreshing="{{isRefreshing}}"
+                       bindloadmore="onLoadMore"
+                       nomore="{{isFinish}}"
+                       pullText="下拉可以刷新"
+                       loadmoreText="加载中...">
+        <block wx:for="{{dataList}}" wx:key>
+            <message-list
+                    isCard="{{false}}"
+                    client="{{item.client}}"
+                    question="{{item.questions}}"
+                    answer="{{item.answer}}"
+                    status="{{item.status}}"
+                    url="{{host+item.url}}"
+            >
+            </message-list>
+        </block>
+
+    </pull-refresh-view>
+</view>

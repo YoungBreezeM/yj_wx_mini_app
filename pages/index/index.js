@@ -62,8 +62,10 @@ Page({
          this.checkUser();
       
     },
-    onShow(e) {
-        
+    onShow() {
+      api.Config.AccessKey = wx.getStorageSync("token")
+      //检查用户信息
+      this.checkUser();
     },
     initData() {
         //获取导航分类

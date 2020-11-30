@@ -19,6 +19,10 @@ Component({
     isCard:{
       type:Boolean,
       default:false
+    },
+    isEditor:{
+      type:Boolean,
+      default:false
     }
   },
 
@@ -27,7 +31,7 @@ Component({
    */
   data: {
     TabCur: 0,
-    scrollLeft: 0,
+    scrollLeft: 0
   },
   /**
    * 组件的方法列表
@@ -38,6 +42,11 @@ Component({
         TabCur: e.currentTarget.dataset.id,
         scrollLeft: (e.currentTarget.dataset.id - 1) * 60
       })
+    },
+    onClose() {
+      this.setData({
+        show: false
+      });
     },
     ViewImage(e) {
       console.log(this.data.imgList)
@@ -52,6 +61,15 @@ Component({
         url: '/pages/details/index?questionId=' + e.currentTarget.dataset.id,
       })
       console.log(e.currentTarget.dataset.id)
+    },
+    toQuestionEd(e){
+      let isEditor = e.currentTarget.dataset.iseditor;
+      if(isEditor){
+        wx.navigateTo({
+          url: '/pages/questioneditor/index?questionId=' + e.currentTarget.dataset.id,
+        })
+      }
+      console.log(e.currentTarget.dataset)
     },
     toUserInfo(e) {
       console.log(e.currentTarget.dataset.id)

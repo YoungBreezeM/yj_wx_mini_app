@@ -16,10 +16,11 @@ page {
 }
 
 .body {
-    width: 100%;
+    width: 95%;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 

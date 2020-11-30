@@ -1,0 +1,2 @@
+/* components/message-list/index.wxss */
+@import "/app.wxss";

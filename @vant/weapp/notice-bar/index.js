@@ -69,8 +69,8 @@ component_1.VantComponent({
     init: function () {
       var _this = this;
       Promise.all([
-        this.getRect('.van-notice-bar__content'),
-        this.getRect('.van-notice-bar__wrap'),
+        this.getRect('.van-webview-bar__content'),
+        this.getRect('.van-webview-bar__wrap'),
       ]).then(function (rects) {
         var contentRect = rects[0],
           wrapRect = rects[1];

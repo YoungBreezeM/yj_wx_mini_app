@@ -29,7 +29,12 @@ const Url = {
   addAnswerByQuestion: ApiBaseUrl + "/answer",
   getQuestionsByClientId: ApiBaseUrl + "/client/questions/",
   addAttention: ApiBaseUrl + "/attention",
-  baseGua :ApiBaseUrl + "/gua/baseGua"
+  baseGua :ApiBaseUrl + "/gua/baseGua",
+  links: ApiBaseUrl+ "/links",
+  wxImage: ApiBaseUrl + "/wxImages/",
+  message: ApiBaseUrl + "/message/",
+  messageCount: ApiBaseUrl + "/message/"+"count/",
+
 }
 
 module.exports = {

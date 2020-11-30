@@ -2,16 +2,18 @@
 let api = require("./config/api.js");
 let {
   Get,
-  Post
+  Post,
+  Upload
 } = require("./utils/api-request.js");
 App({
   onLaunch: function() {
-
-    // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
+    this.initData();
+  },
+  globalData: {
+    userInfo: null,
+    navHeight: null
+  },
+  initData(){
     wx.getSystemInfo({
       success: res => {
         this.globalData.navHeight = res.statusBarHeight + 46;
@@ -21,29 +23,20 @@ App({
         this.globalData.CustomBar = custom.bottom + custom.top - res.statusBarHeight;
       }
     })
-
-    console.log("appp")
-    // 登录
+    //用户校验登录
     wx.login({
       success: res => {
-        console.log("登录")
-        wx.clearStorageSync("token");
-         Get(api.Url.login + res.code)
-        .then(rs => {
-          if (rs.code == 0) {
-            console.log(rs)
-            let client = rs.data;
-             this.checkLogin(client)
-            
-          }
-        })
+        Get(api.Url.login + res.code)
+          .then(rs => {
+            if (rs.code === 0) {
+              console.log("login")
+              console.log(rs.data)
+              //页面回调
+              this.checkLogin(rs.data)
+            }
+          })
       }
     })
-   
-  },
-  globalData: {
-    userInfo: null,
-    navHeight: null
   },
   checkLogin:function(){},//校验用户登录状态
 })
