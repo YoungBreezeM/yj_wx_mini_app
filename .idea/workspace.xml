@@ -1,217 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b78f3a6c-44ef-4846-af8f-03b9264f9842" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/question-item/index.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/guaDetail/computeGua/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/guaDetail/computeGua/index.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/guaDetail/computeGua/index.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/guaDetail/computeGua/index.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/my/message/index.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/my/question/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@vant/weapp/tabs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/@vant/weapp/tabs/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorui/components/cu-custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/colorui/components/cu-custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorui/components/cu-custom.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/colorui/components/cu-custom.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorui/components/cu-custom.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/colorui/components/cu-custom.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorui/main.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/colorui/main.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/article-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/question-item/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/article-list/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/components/question-item/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/article-list/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/question-item/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/article-list/index.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/message-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/message-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/message-list/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/message-list/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pull-refresh-view/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/pull-refresh-view/index.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/verticalText/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/verticalText/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/home/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/home/index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/home/index.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/home/index.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/question/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/question/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/question/index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/question/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/question/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/question/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/question/index.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/attention/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/attention/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/attention/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/attention/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/details/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/details/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/gua/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/gua/index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/gua/index.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/gua/index.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/logs/logs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/logs/logs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/logs/logs.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/logs/logs.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/message/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/message/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/message/index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/message/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/message/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/message/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/message/index.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/question/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/question/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/question/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/question/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/questioneditor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/questionEdit/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/questioneditor/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/questionEdit/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/questioneditor/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/questionEdit/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/questioneditor/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/questionEdit/index.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/resove/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/resove/index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/resove/index.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/resove/index.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/webview/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/webview/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/webview/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/webview/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/00.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/01.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/02.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/03.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/04.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/05.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/06.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/07.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/08.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/09.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/100.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/101.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/102.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/103.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/104.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/105.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/106.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/107.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/108.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/109.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/110.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/111.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/112.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/113.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/114.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/115.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/116.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/117.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/118.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/119.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/120.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/121.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/122.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/123.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/124.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/125.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/126.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/127.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/128.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/129.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/13.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/130.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/131.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/132.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/133.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/134.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/14.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/16.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/17.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/18.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/19.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/20.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/21.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/22.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/23.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/24.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/25.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/26.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/27.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/28.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/29.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/30.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/31.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/32.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/33.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/34.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/35.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/36.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/37.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/38.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/39.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/40.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/41.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/42.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/43.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/44.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/45.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/46.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/47.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/48.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/49.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/50.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/51.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/52.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/53.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/54.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/55.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/56.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/57.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/58.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/59.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/60.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/61.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/62.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/63.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/64.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/65.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/66.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/67.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/68.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/69.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/70.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/71.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/72.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/73.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/74.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/75.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/76.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/77.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/78.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/79.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/80.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/81.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/82.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/83.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/84.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/85.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/86.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/87.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/88.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/89.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/90.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/91.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/92.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/93.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/94.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/95.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/96.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/97.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/98.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/emojis/99.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/html2json.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/htmlparser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/showdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/wxDiscode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/wxParse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/wxParse.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxParse/wxParse.wxss" beforeDir="false" />
-    </list>
+    <list default="true" id="b78f3a6c-44ef-4846-af8f-03b9264f9842" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,18 +10,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/community/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="138" column="29" selection-start-line="138" selection-start-column="29" selection-end-line="138" selection-end-column="29" />
-              <folding>
-                <element signature="e#1978#2763#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/attention/index.wxml">
           <provider selected="true" editor-type-id="text-editor">
@@ -254,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/pages/info/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
-              <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="55" selection-end-column="4" />
+              <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="55" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -263,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/pages/info/index.wxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="154" />
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="154" />
             </state>
           </provider>
         </entry>
@@ -277,11 +55,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/grade/index.wxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/community/index.wxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+              <folding>
+                <element signature="n#style#0;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#view#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#scroll-view#0;n#view#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#pull-refresh-view#0;n#view#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -299,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/components/question-item/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="552">
-              <caret line="59" column="44" lean-forward="true" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="44" />
+              <caret line="59" column="44" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -308,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/views/resolve/index.wxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
-              <caret line="13" column="60" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="60" />
+              <caret line="13" column="60" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#navigator#0;n#view#0;n#scroll-view#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#view#0;n#!!top" expanded="true" />
@@ -379,7 +172,6 @@
         <option value="$PROJECT_DIR$/config/api.js" />
         <option value="$PROJECT_DIR$/pages/question/index.wxml" />
         <option value="$PROJECT_DIR$/pages/index/index.wxml" />
-        <option value="$PROJECT_DIR$/views/community/index.wxml" />
         <option value="$PROJECT_DIR$/pages/gua/index.wxss" />
         <option value="$PROJECT_DIR$/pages/gua/index.wxml" />
         <option value="$PROJECT_DIR$/pages/gua/loadgua/index.wxml" />
@@ -390,6 +182,7 @@
         <option value="$PROJECT_DIR$/pages/attention/index.js" />
         <option value="$PROJECT_DIR$/pages/attention/index.wxml" />
         <option value="$PROJECT_DIR$/pages/grade/index.wxml" />
+        <option value="$PROJECT_DIR$/views/community/index.wxml" />
       </list>
     </option>
   </component>
@@ -450,6 +243,12 @@
               <item name="wx-mini-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="wx-mini-app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wx-mini-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wx-mini-app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -543,12 +342,12 @@
       <workItem from="1606608946725" duration="15886000" />
       <workItem from="1606784754043" duration="23151000" />
       <workItem from="1606968974164" duration="33073000" />
-      <workItem from="1607045416373" duration="45940000" />
+      <workItem from="1607045416373" duration="46568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207787000" />
+    <option name="totallyTimeSpent" value="208415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1080" y="27" width="1920" height="1053" extended-state="6" />
@@ -868,19 +667,6 @@
     <entry file="file://$PROJECT_DIR$/pages/grade/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/community/index.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="26" column="148" selection-start-line="26" selection-start-column="119" selection-end-line="26" selection-end-column="148" />
-          <folding>
-            <element signature="n#style#0;n#view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#view#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#scroll-view#0;n#view#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#pull-refresh-view#0;n#view#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/community/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -894,7 +680,7 @@
     <entry file="file://$PROJECT_DIR$/views/resolve/index.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="13" column="60" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="60" />
+          <caret line="13" column="60" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#navigator#0;n#view#0;n#scroll-view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#view#0;n#!!top" expanded="true" />
@@ -905,14 +691,14 @@
     <entry file="file://$PROJECT_DIR$/pages/info/index.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="154" />
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="154" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/question-item/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
-          <caret line="59" column="44" lean-forward="true" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="44" />
+          <caret line="59" column="44" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -947,14 +733,27 @@
     <entry file="file://$PROJECT_DIR$/pages/info/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
-          <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="55" selection-end-column="4" />
+          <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="55" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/grade/index.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/community/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#scroll-view#0;n#view#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#pull-refresh-view#0;n#view#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
