@@ -1,0 +1,57 @@
+<!--pages/grade/index.wxml-->
+<cu-custom isCustom="{{true}}">
+  <view slot="content">等级介绍</view>
+</cu-custom>
+<view class="margin-lg radius bg-white shadow ">
+  <text class="text-cyan  text-center">积分获取玩法</text>
+  <view class="cu-list menu-avatar">
+    <text class="margin-sm ">视频学习：</text>
+    <view class="cu-item">
+      <view class=" margin-sm content">
+        <text class="margin-left-xs">每观视频0~30分钟 +2积分</text>
+        <text class="margin-left-xs">每观视频30~60分钟加 +5积分</text>
+        <text class="margin-left-xs">每观视频60~120分钟加 +10积分</text>
+        <text class="margin-left-xs">每观视频120~240分钟加 +15积分</text>
+        <text class="margin-left-xs">每观视频大于240分钟加 +20积分</text>
+      </view>
+    </view>
+    <text class="margin-sm ">回答问题：</text>
+    <view class="cu-item">
+      <view class=" margin-sm content">
+        <text class="margin-left-sm">每回答一个问题+1积分</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="margin-lg radius bg-white shadow  text-center">
+  <view class="text-center">积分扣除玩法</view>
+  <view class="flex padding-top-sm text-center justify-start">
+    <view class=" margin-sm text-center">
+      <text class="margin-left-sm">解卦：</text>
+    </view>
+  </view>
+  <view class="flex padding-top-sm text-center justify-start">
+    <view class=" margin-sm text-center">
+      <text class="margin-left-sm">等级</text>
+    </view>
+    <view class="margin-sm text-center">
+      <text class="margin-left-sm">  区间</text>
+    </view>
+    <view class="margin-sm text-center">
+      <text class="margin-left-sm">   消耗值</text>
+    </view>
+  </view>
+  <view wx:for="{{gradeList}}">
+    <view class="flex padding-top-sm text-center justify-start">
+      <view class=" margin-sm text-center">
+        <text class="margin-left-sm">{{item.gradeName}}</text>
+      </view>
+      <view class="margin-sm text-center">
+        <text class="margin-left-sm">{{item.min}}~{{item.max}}分</text>
+      </view>
+      <view class="margin-sm text-center">
+        <text class="margin-left-sm">{{item.value}}分</text>
+      </view>
+    </view>
+  </view>
+</view>

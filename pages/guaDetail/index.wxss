@@ -1,0 +1,5 @@
+/* pages/guaDetail/index.wxss */
+.gua-content{
+    height: 70vh;
+    overflow: scroll;
+}

@@ -41,8 +41,8 @@ Page({
                                 })
                             }else {
                                 console.log("token 检测成功")
-                                wx.switchTab({
-                                    url: '/pages/index/index',
+                                wx.redirectTo({
+                                  url: '/pages/index/index',
                                 })
                             }
                         })
@@ -82,10 +82,9 @@ Page({
                                   if (rs.code === 0) {
                                     console.log(rs.data.token)
                                     wx.setStorageSync("token", rs.data.token)
-                                    wx.switchTab({
+                                    wx.redirectTo({
                                       url: '/pages/index/index',
                                     })
-
                                   }
                                 })
                             }else{
@@ -111,7 +110,7 @@ Page({
                                             if (rs.code === 0) {
                                               console.log(rs.data.token)
                                               wx.setStorageSync("token", rs.data.token)
-                                              wx.switchTab({
+                                              wx.redirectTo({
                                                 url: '/pages/index/index',
                                               })
 

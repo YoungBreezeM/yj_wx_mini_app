@@ -1,14 +1,9 @@
 {
   "usingComponents": {
-    "van-tab": "/@vant/weapp/tab/index",
-    "van-tabs": "/@vant/weapp/tabs/index",
-    "van-card": "/@vant/weapp/card/index",
-    "pull-refresh-view": "../components/pull-refresh-view/index",
-    "article-list": "../components/article-list/index",
-    "van-image": "/@vant/weapp/image/index",
-    "van-sticky": "/@vant/weapp/sticky/index",
-    "van-icon": "/@vant/weapp/icon/index",
-    "van-popup": "/@vant/weapp/popup/index"
+    "community": "/views/community/index",
+    "resolve": "/views/resolve/index",
+    "my": "/views/my/index",
+    "gua": "/views/gua/index"
   },
   "navigationStyle":"custom"
 }

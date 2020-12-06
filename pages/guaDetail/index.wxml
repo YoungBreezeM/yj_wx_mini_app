@@ -1,0 +1,33 @@
+<!--pages/guaDetail/index.wxml-->
+<cu-custom isCustom="{{true}}">
+    <view slot="content">卜卦详解</view>
+</cu-custom>
+<view class="margin-sm">
+  <picker wx:if="{{prediction==null}}"  bindchange="PickerChangeIntegral" value="{{prediction}}" range="{{predictionCategory}}">
+    <button class="cu-btn block line-black lg" >
+      <text class="cuIcon-upload"></text>
+      解卦
+    </button>
+  </picker>
+  <button wx:if="{{prediction}}" bindtap="toResolve" class="cu-btn block line-black lg" >
+    <text class="cuIcon-upload"></text>
+    解{{predictionCategory[prediction]}}
+  </button>
+</view>
+<view class="margin-sm bg-white">
+  <scroll-view scroll-x class="bg-white nav">
+    <view class="flex text-center">
+      <view class="cu-item flex-sub {{index==TabCur?'text-cyan cur':''}}" wx:for="{{tabList}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+       {{item}}
+      </view>
+    </view>
+  </scroll-view>
+  <view class="gua-content">
+    <parser wx:if="{{TabCur==0}}" html="{{baseGua.guaText}}">
+    </parser>
+    <parser wx:if="{{TabCur==1&&yao}}" html="{{yao.yaoText}}">
+    </parser>
+    <view wx:if="{{yao==null}}">未求得爻词，请以本卦内容为主</view>
+  </view>
+</view>
+

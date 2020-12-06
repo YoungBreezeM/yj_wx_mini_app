@@ -41,6 +41,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    toDetails(e){
+      wx.navigateTo({
+        url: '/pages/details/index?questionId=' + e.currentTarget.dataset.id,
+      })
+    }
   }
 })

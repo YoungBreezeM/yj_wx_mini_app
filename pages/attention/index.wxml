@@ -3,12 +3,25 @@
     <view slot="content">我的关注</view>
 </cu-custom>
 
-<view class="cu-list menu-avatar radius padding" wx:for="{{attentionList}}">
-    <view class="cu-item" bindtap="toUserInfo" data-id="{{item.id}}">
-        <view class="cu-avatar round lg" style="background-image:url({{item.avatarUrl}});" ></view>
-        <view class="content">
-            <view class="text-grey">{{item.nickName}}</view>
+<view class="cu-list menu-avatar radius padding animation-scale-up" wx:if="{{attentionList.length>0}}"wx:for="{{attentionList}}" wx:key>
+    <view class="cu-item animation-slide-right"   style="animation-delay: {{(index+1)*0.1}}s;">
+        <view class="cu-avatar round lg" bindtap="toUserInfo" data-id="{{item.id}}" style="background-image:url({{item.avatarUrl}});" ></view>
+        <view class="content text-blue">
+            <view >{{item.nickName}}</view>
+            <view class="radius" bindtap="toGrade">
+                <text class="cuIcon-vip "></text>
+                <text>{{grade.gradeName}}</text>
+            </view>
+            <view class=" radius">
+                <text class="cuIcon-recharge lg "></text>
+                <text>积分{{client.integral}}</text>
+            </view>
+        </view>
+        <view class="text-content margin-left-lg">
+            <view class=" margin-xs radius">
+                <button class="cu-btn {{attention?'line-red':'line-cyan'}}  round" bindtap="addAttention" data-id="{{item.id}}">{{attention?'取消关注':'关注'}}</button>
+            </view>
         </view>
     </view>
 </view>
-
+<view class="cu-list menu-avatar text-center radius padding" wx:if="{{attentionList.length==0}}" >暂无数据</view>

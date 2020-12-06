@@ -1,19 +1,118 @@
-const formatTime = date => {
-  const year = date.getFullYear()
-  const month = date.getMonth() + 1
-  const day = date.getDate()
-  const hour = date.getHours()
-  const minute = date.getMinutes()
-  const second = date.getSeconds()
+function formatTime(date) {
+      let Y = date.getFullYear(),
+      M = date.getMonth() + 1,
+      D = date.getDate(),
+      H = date.getHours(),
+      m = date.getMinutes(),
+      s = date.getSeconds();
+  // 获取date 中的 年 月 日 时 分 秒
+  // 对 月 日 时 分 秒 小于10时, 加0显示 例如: 09-09 09:01
+  if (M < 10) {
+    M = '0' + M;
+  }
+  if (D < 10) {
+    D = '0' + D;
+  }
+  if (H < 10) {
+    H = '0' + H;
+  }
+  if (m < 10) {
+    m = '0' + m;
+  }
+  if (s < 10) {
+    s = '0' + s;
+  }
 
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+  return Y+'-'+M+'-'+D+' '+H+':'+m+":"+s
+}
+formatTime(new Date())
+
+
+function tsFormatTime(date) {
+      Y = date.getFullYear(),
+      M = date.getMonth() + 1,
+      D = date.getDate(),
+      H = date.getHours(),
+      m = date.getMinutes(),
+      s = date.getSeconds();
+  // 获取date 中的 年 月 日 时 分 秒
+  // 对 月 日 时 分 秒 小于10时, 加0显示 例如: 09-09 09:01
+  if (M < 10) {
+    M = '0' + M;
+  }
+  if (D < 10) {
+    D = '0' + D;
+  }
+  if (H < 10) {
+    H = '0' + H;
+  }
+  if (m < 10) {
+    m = '0' + m;
+  }
+  if (s < 10) {
+    s = '0' + s;
+  }
+
+  return Y+'-'+M+'-'+D
+}
+function getDateDiff(dateTimeStamp) {
+  var result;
+  var minute = 1000 * 60;
+  var hour = minute * 60;
+  var day = hour * 24;
+  var month = day * 30;
+  var now = getDate();
+  var diffValue = now - dateTimeStamp;
+  if (diffValue < 0) {
+    return;
+  }
+  var monthC = diffValue / month;
+  var weekC = diffValue / (7 * day);
+  var dayC = diffValue / day;
+  var hourC = diffValue / hour;
+  var minC = diffValue / minute;
+  if (monthC >= 1 || weekC >= 1) {
+    result = tsFormatTime(dateTimeStamp);
+  }
+  else if (dayC >= 1) {
+    result = "" + parseInt(dayC) + "天前";
+  }
+  else if (hourC >= 1) {
+    result = "" + parseInt(hourC) + "小时前";
+  }
+  else if (minC >= 1) {
+    result = "" + parseInt(minC) + "分钟前";
+  } else {
+    result = "刚刚";
+  }
+  return result;
+};
+function getRandomImage(arr) {
+  return arr[Math.floor((Math.random()*arr.length))];
 }
 
-const formatNumber = n => {
-  n = n.toString()
-  return n[1] ? n : '0' + n
+function coutNum(e) {
+  if (e > 1000 && e < 10000) {
+    e = (e / 1000).toFixed(1) + 'k'
+  }
+  if (e > 10000) {
+    e = (e / 10000).toFixed(1) + 'W'
+  }
+  return e
+}
+function isContain(arr,id) {
+  if(arr.indexOf(id) > -1){
+    return true
+  }
+  return false
 }
 
 module.exports = {
-  formatTime: formatTime
+  formatTime:formatTime,
+  tsFormatTime: tsFormatTime,
+  getDateDiff:getDateDiff,
+  getRandomImage: getRandomImage,
+  coutNum: coutNum,
+  isContain: isContain,
 }
+

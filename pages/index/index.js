@@ -1,43 +1,27 @@
 //index.js
 //获取应用实例
+
+
 const app = getApp()
 const {
-    Post,
     Get
 } = require('../../utils/api-request.js');
 const api = require('../../config/api.js');
 
 Page({
     data: {
-        active: 1,
-        winHeight: wx.getSystemInfoSync().windowHeight,
-        isRefreshing: false, //是否下拉刷新状态
-        isFinish: false, //是否加载完全部数据
-        dataList: [],
-        navHeight: app.globalData.CustomBar,
-        userInfo: null,
-        show: false,
+        PageCur: null,
+        active:'community',
+        user:null,
         categoryList: [],
-        TabCur: null,
-        scrollLeft: 0,
-        startNum: 1,
-        pageSize: 10,
-        pageNum: 1,
-        lock: true,
-        host: api.ApiBaseUrl,
-        token:null
+        links:[],
+        routers:{},
+        messageCount:null,
+        navHeight: app.globalData.CustomBar,
+        show: false,
+        token: null
     },
-    tabSelect(e) {
-        this.setData({
-            TabCur: e.currentTarget.dataset.id,
-            scrollLeft: (e.currentTarget.dataset.id - 1) * 60,
-            pageNum: 1,
-            dataList: []
-        })
 
-        this.loadData(true);
-
-    },
     onClose() {
         this.setData({
             show: false
@@ -56,136 +40,122 @@ Page({
         })
     },
     onLoad() {
-      console.log(wx.getStorageSync("token"))
-      api.Config.AccessKey = wx.getStorageSync("token")
-        //检查用户信息
-         this.checkUser();
-      
+
+
     },
     onShow() {
-      api.Config.AccessKey = wx.getStorageSync("token")
-      //检查用户信息
-      this.checkUser();
+        console.log("-------------> show")
+        let pageCur = wx.getStorageSync("PageCur");
+        if(pageCur){
+            console.log(pageCur)
+            this.initData(pageCur);
+        }else {
+            console.log(this.data.active)
+            this.initData(this.data.active);
+        }
+
     },
-    initData() {
-        //获取导航分类
+    initClient(){
+        //初始化客户端
+        Get(api.Url.getUserInfo)
+            .then(res => {
+                if (res.code === 0) {
+                    this.setData({
+                        user: res.data
+                    })
+                    return res.data.client;
+                }
+            })
+            .then(client=>{
+                Get(api.Url.messageCount + client.id)
+                    .then(res => {
+                        console.log(res)
+                        if (res.code === 0) {
+                            this.setData({
+                                messageCount: res.data.count
+                            })
+                        }
+                    })
+            })
+    },
+    initCommunity(active){
+        //初始化导航分类
+        console.log("=======init "+active+"======")
         Get(api.Url.communityCategory)
             .then(res => {
                 console.log(res)
                 if (res.code === 0) {
                     this.setData({
                         categoryList: res.data,
-                        TabCur: res.data[0].id
+                        PageCur:active
                     })
-
-                    this.setData({
-                        pageNum: 1,
-                        dataList: []
-                    })
-                    this.loadData(true)
+                    wx.setStorageSync("PageCur",active);
                 }
             })
     },
-    checkUser() {
-       wx.getStorage({
-         key: 'token',
-         success: (res)=> {
-           console.log(res)
-           if(!res.data){
-             wx.redirectTo({
-               url: '/pages/login/index',
-             })
-           }else{
-             this.setData({
-               userInfo:wx.getStorageSync("userInfo"),
-               token :res.data
-             })
-             this.initData()
-           }
-         },
-       })
+    initResolve(active){
+        console.log("=======init "+active+"======")
+        //获取链接
+        Get(api.Url.links)
+            .then(res=>{
+                if(res.code===0){
+                    console.log(res)
+                    this.setData({
+                        links:res.data,
+                        PageCur:active
+                    })
+                    wx.setStorageSync("PageCur",active);
+                }
+            })
     },
-    pushInfo() {
-        wx.navigateTo({
-            url: '/pages/question/index',
+    initMy(active){
+        console.log("=======init "+active+"======")
+        this.setData({
+            PageCur:active
         })
+        wx.setStorageSync("PageCur",active);
     },
-    getCategoryData(categoryId, start, pageSize, isRefresh) {
-      Get(api.Url.questionListPage + categoryId + "/" + start + "/" + pageSize)
-            .then(res => {
-                console.log(res)
-                console.log(res.data.list.length < this.data.pageSize)
-                if (res.code === 0) {
-
-                    this.setData({
-                        isFinish: res.data.list.length < this.data.pageSize //全部加载完毕
-                    })
-
-                    if (isRefresh) {
-                        this.setData({
-                            dataList: res.data.list,
-                            isRefreshing: false, //关闭下拉刷新
-                            lock:true
-                        })
-                    } else {
-                        this.setData({
-                            dataList:this.data.dataList.concat(res.data.list),
-                            lock:true
-                        })
-
-                    }
-
-                }
-            })
+    initGua(active){
+        console.log("=======init "+active+"======")
+        this.setData({
+            PageCur:active
+        })
+        wx.setStorageSync("PageCur",active);
     },
-    //延迟加载
-    lazyLoad(isRefresh) {
-        if (this.data.lock){
-            this.data.lock = false;
-            setTimeout(() => {
-                this.getCategoryData(
-                    this.data.TabCur,
-                    this.data.startNum * this.data.pageNum,
-                    this.data.pageSize,
-                    isRefresh
-                )
-            }, 500)
-        }else {
-            console.log("懒加载锁正被使用")
-            if(!isRefresh){
-                this.setData({
-                    pageNum: this.data.pageNum -1
-                })
-            }
+    async initData(active) {
+
+        //初始化请求密钥
+        api.Config.AccessKey = wx.getStorageSync("token")
+
+        this.initClient()
+
+
+        let routers ={
+            "community":this.initCommunity,
+            "resolve":this.initResolve,
+            "my":this.initMy,
+            "gua": this.initGua
         }
 
-    },
-    //加载数据
-    loadData(isRefresh) {
-        this.getCategoryData(
-            this.data.TabCur,
-            this.data.startNum * this.data.pageNum,
-            this.data.pageSize,
-            isRefresh
-        )
-    },
-    onRefresh() {
         this.setData({
-            pageNum: 1,
+            routers:routers
         })
-        this.lazyLoad(true);
+
+        routers[active]&&routers[active](active);
+
     },
-    onLoadMore() {
-        console.log(this.data.isFinish)
-        console.log("加载更多..")
+    addQuestion(){
+        wx.navigateTo({
+            url: "/pages/question/index"
+        })
+    },
+    NavChange(e) {
         this.setData({
-            pageNum: this.data.pageNum + 1
+            PageCur: e.currentTarget.dataset.cur
         })
-        this.lazyLoad(false)
+        let routers = this.data.routers;
+        let active = e.currentTarget.dataset.cur
+        routers[active]&&routers[active](active);
+
     },
-    toAttention(){
-      wx.navigateTo({
-        url: '/pages/attention/index',
-      })
-    }
 })

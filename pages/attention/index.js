@@ -1,8 +1,7 @@
 // pages/attention/index.js
 const {
-  Post,
   Get,
-  Put
+  Post
 } = require('../../utils/api-request.js');
 const api = require('../../config/api.js');
 Page({
@@ -11,7 +10,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    attentionList:null
+    attentionList:null,
+    attention:true,
+    client:null,
+    grade:null
   },
 
   /**
@@ -21,15 +23,6 @@ Page({
     this.checkUser();
   },
   checkUser() {
-    if (!wx.getStorageSync("userInfo")) {
-      wx.redirectTo({
-        url: '/pages/login/index',
-      })
-    } else {
-      this.setData({
-        userInfo: wx.getStorageSync("userInfo")
-      })
-    }
 
     //初始用户信息
     Get(api.Url.getUserInfo)
@@ -37,7 +30,8 @@ Page({
           if (res.code === 0) {
 
             this.setData({
-              client: res.data,
+              client: res.data.client,
+              grade :res.data.grade
             })
 
             this.getAttentionList();
@@ -60,6 +54,19 @@ Page({
             })
           }
         })
+  },
+  addAttention(e){
+    Post(api.Url.addAttention,{
+      fromId:this.data.client.id,
+      toId: e.currentTarget.dataset.id
+    }).then(res=>{
+      if(res.code===0){
+        console.log(res)
+        this.setData({
+          attention:!this.data.attention
+        })
+      }
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

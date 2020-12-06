@@ -1,0 +1,41 @@
+<!--views/resolve/index.wxml-->
+<cu-custom  isCustom="{{false}}">
+    <view slot="content">解惑</view>
+</cu-custom>
+
+
+<scroll-view scroll-y class="scrollPage margin-top-sm">
+    <view class='nav-list'>
+        <navigator
+                open-type="navigate"
+                hover-class='none'
+                url="/pages/webview/index?src={{item.url}}"
+                class="nav-li animation-slide-bottom bg-blue"
+                style="animation-delay: {{(index+1)*0.1}}s;"
+                wx:for="{{links}}" wx:key>
+            <view class="nav-title">视频</view>
+            <view class="nav-name">{{item.title}}</view>
+            <text class='cuIcon-video'></text>
+        </navigator>
+    </view>
+    <view class='cu-tabbar-height'></view>
+</scroll-view>
+<view class="cu-modal {{modalName=='Modal'?'show':''}}" style="height: 100vh">
+    <view class="cu-dialog">
+        <view class="cu-bar bg-white justify-end">
+            <view class="content">积分提示</view>
+            <view class="action" bindtap="hideModal">
+                <text class="cuIcon-close text-red"></text>
+            </view>
+        </view>
+        <view class="padding-xl">
+            <view class="flex s justify-start">
+                <view class="radius">{{duringTime}}</view>
+            </view>
+            <view class="flex solid-bottom padding justify-start">
+                <view class="margin-right-sm radius">观看时长{{timeLong}}分钟</view>
+                <view class="margin-right-sm radius">积分+{{addIntegral}}</view>
+            </view>
+        </view>
+    </view>
+</view>

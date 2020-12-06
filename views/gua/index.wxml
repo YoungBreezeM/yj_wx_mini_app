@@ -1,0 +1,57 @@
+<!--views/gua/index.wxml-->
+<cu-custom isCustom="{{false}}">
+    <view slot="content">卜卦</view>
+</cu-custom>
+<view class="grid col-1 margin-sm text-center  text-black padding-sm">
+    <view>善易者不占，知易者不占而知！</view>
+    <view>信则灵，不信则不灵</view>
+    <view>一直摇，直到声音结束!</view>
+</view>
+
+<view class="gua show margin-sm round light">
+    <view class="margin-sm"  wx:for="{{guaGraph[top]}}" wx:key>
+        <view class="grid col-1" wx:if="{{item===1}}">
+            <view class="padding-xs">
+                <view class="padding-xs bg-red"></view>
+            </view>
+        </view>
+        <view class="grid col-2  text-center" wx:if="{{item===0}}">
+            <view class="padding-xs ">
+                <view class="padding-xs bg-black"></view>
+            </view>
+            <view class=" padding-xs ">
+                <view class="padding-xs bg-black"></view>
+            </view>
+        </view>
+    </view>
+    <view class=" grid col-2 text-center text-xls text-black">
+        <view wx:if="{{top!=null}}" >上{{gua[top]}}</view>
+        <view wx:if="{{bottom!=null}}">下{{gua[bottom]}}</view>
+    </view>
+    <view class="margin-sm"  wx:for="{{guaGraph[bottom]}}" wx:key>
+        <view class="grid col-1" wx:if="{{item===1}}">
+            <view class="padding-xs">
+                <view class="padding-xs bg-red"></view>
+            </view>
+        </view>
+        <view class="grid col-2  text-center" wx:if="{{item===0}}">
+            <view class="padding-xs ">
+                <view class="padding-xs bg-black"></view>
+            </view>
+            <view class=" padding-xs ">
+                <view class="padding-xs bg-black"></view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="padding-xl">
+    <button class="cu-btn block line-orange lg" bindtap="toBuGua">
+        <text class="cuIcon-upload"></text>
+        起卦
+    </button>
+</view>
+
+<view class="padding-xl text-center ">
+    <view class="text-black text-xl">{{baseGua.guaName}}</view>
+    <view class="text-blue line-blue" wx:if="{{baseGua}}" bindtap="toDetail">详情</view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "pull-refresh-view": "/components/pull-refresh-view/index",
+    "question-item": "/components/question-item/index"
+  }
+}

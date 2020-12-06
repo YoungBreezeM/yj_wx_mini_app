@@ -1,0 +1,60 @@
+<wxs src="../../utils/tools.wxs" module="tools"/>
+
+
+<view class="nav-bar bg-gradual-blue radius shadow animation-slide-top" style="height: {{navHeight}}px; animation-delay: 0.2s;">
+    <view class="flex nav-item justify-start">
+        <view class="margin-xs radius">
+            <view class="cu-avatar round lg" style="background-image:url({{user.client.avatarUrl}});"></view>
+        </view>
+        <view class="flex padding-top-lg text-center justify-end">
+            <view class=" margin-xs radius" bindtap="toAttention">
+                <text class="cuIcon-favorfill lg text-white"></text>
+                <text>关注</text>
+            </view>
+            <view class=" margin-xs radius" bindtap="toGrade">
+                <text class="cuIcon-vip lg text-white"></text>
+                <text>{{user.grade.gradeName}}</text>
+            </view>
+            <view class=" margin-xs radius" >
+                <text class="cuIcon-recharge lg text-white"></text>
+                <text>积分{{user.client.integral}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="body" style="top:{{navHeight}}px;">
+    <scroll-view scroll-x class="bg-white nav animation-slide-left" scroll-with-animation scroll-left="{{scrollLeft}}" style="animation-delay: 0.2s;">
+        <view class="flex text-center">
+            <view class="cu-item flex-sub {{item.id==TabCur?'text-cyan cur':''}}" wx:for="{{categoryList}}" wx:key
+                  bindtap="tabSelect" data-id="{{item.id}}">
+                {{item.categoryName}}
+            </view>
+        </view>
+    </scroll-view>
+    <pull-refresh-view class="list-container animation-slide-bottom"
+                       style="animation-delay: 0.2s;"
+                       bindonrefresh="onRefresh"
+                       refreshing="{{isRefreshing}}"
+                       bindloadmore="onLoadMore"
+                       nomore="{{isFinish}}"
+                       pullText="下拉可以刷新"
+                       loadmoreText="加载中...">
+        <block >
+            <view wx:for="{{dataList}}" wx:key>
+                <question-item
+                        isCard="{{false}}"
+                        client="{{item.client}}"
+                        question="{{item.questions}}"
+                        imgList="{{tools.getRealUrl(host,item.imgList)}}"
+                >
+                </question-item>
+            </view>
+        </block>
+
+    </pull-refresh-view>
+
+</view>
+
+
+

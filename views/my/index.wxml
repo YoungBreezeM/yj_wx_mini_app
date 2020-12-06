@@ -1,0 +1,60 @@
+
+<scroll-view scroll-y class="scrollPage">
+    <!-- 顶图 -->
+    <view class="UCenter-bg bg-gradual-blue animation-slide-top" style="animation-delay: 0.1s;">
+        <view class="margin-top-sm">
+            <view class="cu-avatar round lg margin-top-lg" style="background-image:url({{user.client.avatarUrl}});"></view>
+        </view>
+        <image src="{{waterWave}}" mode="scaleToFill" class="gif-wave"></image>
+    </view>
+    <!-- 宫格 -->
+    <view class="cu-list grid col-3 no-border shadow  animation-slide-left" style="animation-delay: 0.2s;">
+
+        <view class="cu-item" bindtap="toQuestionPage">
+            <view class="cuIcon-calendar text-red">
+            </view>
+            <text>我的问题</text>
+        </view>
+        <view class="cu-item">
+            <view class="cuIcon-messagefill text-cyan" bindtap="toMessage">
+                <view class="cu-tag badge" wx:if="{{messageCount>0}}">{{messageCount}}</view>
+            </view>
+            <text>我的消息</text>
+        </view>
+    </view>
+    <!-- 功能列表 -->
+    <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+        <view class="cu-item arrow animation-slide-bottom" style="animation-delay: 0.1s;">
+            <button class="cu-btn content" open-type="contact">
+                <image src="/static/images/about/service.png" class="png" mode="aspectFit"></image>
+                <text class="text-grey">联系客服</text>
+            </button>
+        </view>
+        <view class="cu-item arrow animation-slide-bottom" style="animation-delay: 0.2s;">
+            <navigator class="content" url="/pages/about/links/index" hover-class="none">
+                <text class="cuIcon-friendfavor text-blue"></text>
+                <text class="text-grey">友情链接</text>
+            </navigator>
+        </view>
+
+        <view class="cu-item arrow animation-slide-bottom" style="animation-delay: 0.3s;">
+            <navigator class="content" url="/pages/about/about/index" hover-class="none">
+                <image src="/static/images/about/about.png" class="png" mode="aspectFit"></image>
+                <text class="text-grey">关于我</text>
+            </navigator>
+        </view>
+
+        <view class="cu-item arrow animation-slide-bottom" style="animation-delay: 0.4s;">
+            <button class="cu-btn content" open-type="feedback">
+                <text class="cuIcon-writefill text-cyan"></text>
+                <text class="text-grey">意见反馈</text>
+            </button>
+        </view>
+        <view class="cu-item arrow animation-slide-bottom" style="animation-delay: 0.5s;">
+            <navigator class="content" url="/pages/about/disclaimer/index" hover-class="none">
+                <image src="/static/images/about/disclaimer.png" class="png"></image>
+                <text class="text-grey">免责声明</text>
+            </navigator>
+        </view>
+    </view>
+</scroll-view>

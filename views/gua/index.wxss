@@ -1,0 +1,9 @@
+/* views/gua/index.wxss */
+@import "/app.wxss";
+
+.gua{
+  width: 400rpx;
+  height: 400rpx;
+  margin: auto;
+}
+

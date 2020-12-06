@@ -1,5 +1,5 @@
 <view class="cu-custom" style="height:{{CustomBar}}px">
-  <view class="cu-bar fixed {{bgImage!=''?'none-bg text-white bg-img':''}} bg" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed {{bgImage!=''?'none-bg text-white bg-img':''}} bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <view class="action" bindtap="BackPage" wx:if="{{isBack}}">
       <text class="cuIcon-back"></text>
       <slot name="backText"></slot>

@@ -2,7 +2,7 @@
   ColorUi for MP-weixin  v2.1.4 | by 文晓港 2019年4月25日19:15:42
   仅供学习交流，如作它用所承受的法律责任一概与作者无关
   使用ColorUi开发扩展与插件时，请注明基于ColorUi开发
-  
+
   （QQ交流群：240787041）
 */
 
@@ -1767,7 +1767,6 @@ button.icon.lg {
 	position: relative;
 	z-index: 2;
 	padding-top: 50rpx;
-	background-color: inherit;
 }
 
 .cu-bar.tabbar .action.add-action [class*="cuIcon-"] {
@@ -1794,9 +1793,9 @@ button.icon.lg {
 	left: 0;
 	right: 0;
 	margin: auto;
-	box-shadow: 0 -3rpx 8rpx rgba(0, 0, 0, 0.08);
+	box-shadow: 0 -3rpx 8rpx rgba(64, 63, 64, 0.08);
 	border-radius: 50rpx;
-	background-color: inherit;
+	background-color: rgba(64, 63, 64, 0.83);
 	z-index: 0;
 }
 
@@ -1809,7 +1808,6 @@ button.icon.lg {
 	left: 0;
 	right: 0;
 	margin: auto;
-	background-color: inherit;
 	z-index: 1;
 }
 

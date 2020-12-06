@@ -3,73 +3,20 @@ page {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom right, #e66465, #9198e5);
 }
 
-.nav-bar {
-    width: 100%;
+
+
+/*new css*/
+.tab-bar{
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    
-}
-
-.body {
+    z-index: 999999;
+    bottom: 10px;
+    left: 2.5%;
     width: 95%;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    border-radius: 5px;
+
 }
 
-
-.list-container {
-  height:95%;
-  background: rgb(236, 234, 234);
+.tab-bar-bg{
+    background: rgba(64, 63, 64, 0.83);
 }
-
-.body > .btn {
-    width: 60px;
-    height: 20px;
-    position: absolute;
-    top: -25px;
-    left: 43%;
-}
-
-
-.nav-module {
-    position: absolute;
-    width: 100%;
-    left: 0;
-}
-
-
-
-.push-btn {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 5%;
-    z-index: 20;
-    right: 10px;
-    font-size: 40px;
-    color: #1cbbb4 ;
-}
-
-.push-btn:active {
-    color: #9fa896;
-}
-
-
-
-
-.custom-pull-down, .custom-loader {
-    width: 100%;
-    font-size: 28 rpx;
-    color: #fcffec;
-    text-align: center;
-    line-height: 60px;
-    background-color: #eeeeee;
-}
-

@@ -1,52 +1,60 @@
-<wxs src="../../utils/tools.wxs" module="tools"/>
-<view class="nav-bar" style="height:{{navHeight*2}}px">
-    <view class="nav-module padding-sm" style="top:{{navHeight}}px">
-        <view class="bg-black radius shadow-warp">
-            <view class="flex  padding-sm justify-start">
-                <view class="margin-xs radius">
-                    <view class="cu-avatar round lg" style="background-image:url({{userInfo.avatarUrl}});"></view>
-                </view>
-                <view class="margin-xs padding-sm radius">
-                    {{userInfo.nickName}}
-                </view>
-                <view class="flex padding-top-sm  justify-end">
-                    <view class=" margin-xs radius" bindtap="toAttention">
-                        <text class="cuIcon-favorfill lg text-white" ></text>
-                        <text>关注</text>
-                    </view>
-                </view>
+<community
+        class="animation-scale-down"
+        wx:if="{{PageCur=='community'}}"
+        navHeight="{{navHeight}}"
+        user="{{user}}"
+        categoryList="{{categoryList}}"
+        TabCur="{{categoryList[0].id}}"
+>
+</community>
+<resolve
+        class="animation-scale-down"
+        wx:if="{{PageCur=='resolve'}}"
+        links="{{links}}"
+>
+
+</resolve>
+<my
+        class="animation-scale-down"
+        wx:if="{{PageCur=='my'}}"
+        user="{{user}}"
+        messageCount="{{messageCount}}"
+>
+
+</my>
+<gua  wx:if="{{PageCur=='gua'}}"
+      class="animation-scale-down"
+>
+
+</gua>
+
+<view class="tab-bar animation-scale-down ">
+    <view class="cu-bar tabbar tab-bar-bg round">
+        <view class="action {{PageCur=='community'?'text-cyan':'text-gray'}}" bindtap="NavChange" data-cur="community">
+            <view class="cuIcon-community"></view> 交流
+        </view>
+        <view class="action {{PageCur=='gua'?'text-cyan':'text-gray'}}" bindtap="NavChange" data-cur="gua">
+            <view class="cuIcon-similar">
             </view>
+            易经
+        </view>
+        <view class="action {{PageCur=='add'?'text-cyan':'text-gray'}} add-action " >
+            <button class="cu-btn cuIcon-add bg-cyan shadow" bindtap="addQuestion"></button>
+            发布
+        </view>
+        <view class="action {{PageCur=='resolve'?'text-cyan':'text-gray'}}" bindtap="NavChange" data-cur="resolve">
+            <view class="cuIcon-question">
+            </view>
+            解惑
+        </view>
+        <view class="action {{PageCur=='my'?'text-cyan':'text-gray'}}" bindtap="NavChange" data-cur="my">
+            <view class="cuIcon-my">
+                <view wx:if="{{messageCount>0}}" class="cu-tag badge">{{messageCount}}</view>
+            </view>
+            我的
         </view>
     </view>
 </view>
-<view class="body margin-sm" style="height:75vh;top:{{navHeight*2+10}}px">
-     <scroll-view scroll-x style="border-top-left-radius: 5px;border-top-right-radius: 5px;" class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
-        <view class="flex text-center">
-            <view class="cu-item flex-sub {{item.id==TabCur?'text-cyan cur':''}}" wx:for="{{categoryList}}" wx:key bindtap="tabSelect" data-id="{{item.id}}">
-                {{item.categoryName}}
-            </view>
-        </view>
-    </scroll-view>
-    <!-- 默认样式 -->
-    <pull-refresh-view class="list-container"
-                       bindonrefresh="onRefresh"
-                       refreshing="{{isRefreshing}}"
-                       bindloadmore="onLoadMore"
-                       nomore="{{isFinish}}"
-                       pullText="下拉可以刷新"
-                       loadmoreText="加载中...">
-        <block wx:for="{{dataList}}" wx:key>
-            <article-list
-                     isCard="{{true}}"
-                    client="{{item.client}}"
-                    question="{{item.questions}}"
-                    imgList="{{tools.getRealUrl(host,item.imgList)}}"
-            >
-            </article-list>
-        </block>
 
-    </pull-refresh-view> 
-</view>
-<view class="push-btn">
-    <van-icon name="add" bindtap="pushInfo" />
-</view>
+
+

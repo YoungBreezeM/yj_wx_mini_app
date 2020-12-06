@@ -4,7 +4,8 @@
         <view class="cu-list menu-avatar ">
             <view class="cu-item" >
                 <view class="cu-avatar round lg"
-                      style="background-image:url({{client.avatarUrl}});" bindtap="toUserInfo" data-id="{{client.id}}">
+                      style="background-image:url({{client.avatarUrl}});"  data-id="{{client.id}}">
+                    <view class="cu-tag badge" wx:if="{{!status}}"></view>
                 </view>
                 <view class="content flex-sub">
                     <view>{{client.nickName}}</view>
@@ -14,10 +15,10 @@
                 </view>
             </view>
         </view>
-        <view class="text-content">
+        <view class="text-content" >
             {{answer.content}}
         </view>
-         <view class="content">
+         <view class="content" bindtap="toDetails" data-id="{{question.id}}">
             <image src="{{url}}" mode="aspectFill"></image>
             <view class="desc">
                 <view class="text-content">{{question.content}}</view>

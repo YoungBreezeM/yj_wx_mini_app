@@ -10,7 +10,8 @@ const Config = {
 //图片配置
 const ImageServer = {
   bg: ApiBaseUrl +"/static/pg.png",//背景图片
-  noContentImage: "https://cdn.fuzui.net/basis/nocontent.png"  //无内容
+  noContentImage: "https://cdn.fuzui.net/basis/nocontent.png",  //无内容
+  waterWave: "https://cdn.fuzui.net/tmp/wave.gif" //水波纹
 }
 
 //数据接口
@@ -34,7 +35,10 @@ const Url = {
   wxImage: ApiBaseUrl + "/wxImages/",
   message: ApiBaseUrl + "/message/",
   messageCount: ApiBaseUrl + "/message/"+"count/",
-
+  grade: ApiBaseUrl + "/grade/",
+  getOneBaseGua: ApiBaseUrl + "/baseGua/",
+  getOneYao : ApiBaseUrl + "/yao/",
+  addIntegral: ApiBaseUrl + "/client/addIntegral/"
 }
 
 module.exports = {

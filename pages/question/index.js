@@ -10,8 +10,7 @@ const api = require('../../config/api.js');
 Page({
   data: {
     title: '发表',
-    userInfo: null,
-    client: null,
+    user: null,
     imgList: [],
     categoryList: [],
     chaCheList: [],
@@ -22,9 +21,7 @@ Page({
     realUrlList: []
   },
   onLoad() {
-    //检查用户是否登录
-    this.checkUser();
-    console.log(wx.getStorageSync("token"))
+    this.initData()
   },
   onShow() {
 
@@ -50,11 +47,12 @@ Page({
         }
     })
 
-    Get(api.Url.getUserInfo, this.data.token)
+    Get(api.Url.getUserInfo)
       .then(res => {
         if(res.code===0){
           this.setData({
-            client:res.data
+            client:res.data.client,
+            user:res.data
           })
         }
       })
@@ -125,7 +123,7 @@ Page({
       return;
     }
 
-    if (this.data.client.integral - integral <= 0) {
+    if (this.data.client.integral - integral < 0) {
       wx.showToast({
         title: '积分不足',
         icon: 'none',
@@ -156,7 +154,9 @@ Page({
           duration: 1000,
           mask: true,
           success: () => {
-            this.toHome();
+            wx.navigateBack({
+              delta:1
+            })
           }
         })
       }

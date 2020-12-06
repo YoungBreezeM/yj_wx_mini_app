@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "message-list": "../components/message-list/index",
-    "pull-refresh-view": "../components/pull-refresh-view/index"
-  }
-}

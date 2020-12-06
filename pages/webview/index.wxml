@@ -1,2 +1,2 @@
 <!--pages/webview/index.wxml-->
-<web-view src="{{src}}"></web-view>
+<web-view src="{{src}}"   bindmessage="msgHandle"  bindload="loadSuccess"></web-view>

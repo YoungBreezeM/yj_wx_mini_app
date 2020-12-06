@@ -1,32 +1,37 @@
+<!--views/commit/index.wxml-->
 <cu-custom  isCustom="{{true}}">
-  <view slot="content">{{title}}</view>
+  <view slot="content">发布</view>
 </cu-custom>
 
 <view>
   <form>
-    <view class="bg-white margin-top">
+    <view class="bg-cyan radius margin-sm shadow animation-slide-left" style="animation-delay: 0.1s;">
       <view class="flex solid-bottom padding justify-start">
-        <view class="cu-avatar lg round margin-left" style="background-image:url('{{userInfo.avatarUrl}}');">
+        <view class="cu-avatar lg round margin-left" style="background-image:url('{{user.client.avatarUrl}}');">
         </view>
-        <view class="bg-cyan padding-sm margin-xs radius">{{userInfo.nickName}}</view>
-        <view class="bg-cyan padding-sm margin-xs radius">积分：{{client.integral}}</view>
+        <view class="padding-sm margin-xs radius">{{user.client.nickName}}</view>
+        <view class="padding-sm margin-xs radius">积分{{user.client.integral}}</view>
+        <view class="padding-sm margin-xs radius">{{user.grade.gradeName}}</view>
       </view>
-
-
     </view>
-    <view class="cu-form-group">
+    <view class="cu-bar bg-white solid-bottom animation-slide-right" style="animation-delay: 0.2s;">
+      <view class='action'>
+        <text class='cuIcon-titles text-cyan '></text> 输入问题
+      </view>
+    </view>
+    <view class="cu-form-group margin-sm animation-slide-left" style="animation-delay: 0.3s;">
       <textarea class="" maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaAInput" placeholder="请输入"></textarea>
     </view>
-    <view class="cu-bar bg-white ">
-      <view class="action">
-        图片上传
+    <view class="cu-bar bg-white solid-bottom animation-slide-right" style="animation-delay: 0.4s;">
+      <view class='action'>
+        <text class='cuIcon-titles text-cyan '></text>  图片上传
       </view>
       <view class="action">
         {{imgList.length}}/9
       </view>
     </view>
-    <view class="cu-form-group">
-      <view class="grid col-4 grid-square flex-sub">
+    <view class="cu-form-group margin-sm animation-slide-left" style="animation-delay: 0.5s;">
+      <view class="grid col-4 grid-square flex-sub margin-sm">
         <view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
           <image src='{{imgList[index]}}' mode='aspectFill'></image>
           <view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
@@ -38,7 +43,12 @@
         </view>
       </view>
     </view>
-    <view class="padding-top-sm">
+    <view class="cu-bar bg-white solid-bottom animation-slide-right" style="animation-delay: 0.6s;">
+      <view class='action'>
+        <text class='cuIcon-titles text-cyan '></text>  选择标签/积分
+      </view>
+    </view>
+    <view class="bg-white margin-sm animation-slide-left" style="animation-delay: 0.7s;">
       <view class="flex solid-bottom padding justify-start">
         <view>
           <picker bindchange="PickerChange" value="{{tagIndex}}" range="{{categoryList}}">
@@ -58,7 +68,7 @@
         </view>
       </view>
     </view>
-    <view class="padding-xl">
+    <view class="margin-sm animation-slide-right" style="animation-delay: 0.8s;">
       <button class="cu-btn block line-orange lg" bindtap="submitQuestion" >
         <text class="cuIcon-upload"></text>
         发表

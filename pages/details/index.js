@@ -32,30 +32,13 @@ Page({
         }
     },
     checkUser() {
-        let userInfo = wx.getStorageSync("userInfo");
-
         //初始用户信息
         Get(api.Url.getUserInfo)
             .then(res => {
                 if (res.code === 0) {
-                    if (userInfo) {
-                        this.setData({
-                            userInfo: userInfo
-                        })
-                    } else {
-                        this.setData({
-                            modalName: "DialogModal"
-                        })
-                    }
-
-                    res.data.nickName = userInfo.nickName;
-                    res.data.avatarUrl = userInfo.avatarUrl;
-
                     this.setData({
-                        client: res.data,
+                        client:res.data.client
                     })
-
-
                 }
             })
     },
@@ -67,7 +50,7 @@ Page({
                   this.setData({
                     questionAnswers:res.data
                   })
-                 
+
               }
           })
     },

@@ -1,0 +1,13 @@
+
+<cu-custom isCustom="{{true}}">
+    <view slot="content">卜卦</view>
+</cu-custom>
+
+<view class="margin-lr shadow">
+    <parser wx:if="{{text}}" html="{{text}}">
+
+    </parser>
+    <view wx:if="{{!text}}" class="text-center text-black">
+        <text>{{notice}}</text>
+    </view>
+</view>

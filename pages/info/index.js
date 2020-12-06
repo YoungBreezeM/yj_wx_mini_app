@@ -72,7 +72,7 @@ Page({
           if (res.code === 0) {
 
             this.setData({
-              fromId: res.data.id,
+              fromId: res.data.client.id,
             })
             this.loadData(true)
           }

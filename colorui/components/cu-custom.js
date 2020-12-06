@@ -14,7 +14,7 @@ Component({
     bgColor: {
       type: String,
       default: 'bg'
-    }, 
+    },
     isCustom: {
       type: [Boolean, String],
       default: false
@@ -44,6 +44,7 @@ Component({
       wx.navigateBack({
         delta: 1
       });
+
     },
     toHome(){
       wx.reLaunch({
