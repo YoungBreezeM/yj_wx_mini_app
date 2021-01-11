@@ -3,7 +3,7 @@
   <view slot="content">问题编辑</view>
 </cu-custom>
 
-<view class="cu-card dynamic isCard">
+<view class="cu-card dynamic isCard" wx:if="{{!isEdit}}">
   <view class="cu-item shadow">
     <view class="cu-list menu-avatar">
       <view class="cu-item">
@@ -61,14 +61,14 @@
   </view>
 </view>
 
-<van-popup show="{{ show }}" closeable position="bottom" custom-style="height: 90%" bind:close="onClose">
+<view wx:if="{{isEdit}}" bind:close="onClose">
   <view>
     <form>
       <view class="bg-white margin-top">
         <view class="flex solid-bottom padding justify-start">
-          <view class="cu-avatar lg round margin-left" style="background-image:url('{{userInfo.avatarUrl}}');">
+          <view class="cu-avatar lg round margin-left" style="background-image:url('{{client.avatarUrl}}');">
           </view>
-          <view class="bg-cyan padding-sm margin-xs radius">{{userInfo.nickName}}</view>
+          <view class="bg-cyan padding-sm margin-xs radius">{{client.nickName}}</view>
           <view class="bg-cyan padding-sm margin-xs radius">积分：{{client.integral}}</view>
         </view>
 
@@ -125,4 +125,4 @@
       </view>
     </form>
   </view>
-</van-popup>
+</view>

@@ -1,5 +1,5 @@
 <!--views/commit/index.wxml-->
-<cu-custom  isCustom="{{true}}">
+<cu-custom  isCustom="{{true}}" class="animation-slide-top">
   <view slot="content">发布</view>
 </cu-custom>
 
@@ -76,3 +76,4 @@
     </view>
   </form>
 </view>
+

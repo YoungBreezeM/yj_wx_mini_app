@@ -47,9 +47,7 @@ Page({
     }
   },
   initBaseGua(id){
-    Post(api.Url.getOneBaseGua,{
-      id:id
-    }).then(res=>{
+    Get(api.Url.getOneBaseGua+id).then(res=>{
       console.log(res)
       if(res.code===0){
         this.setData({
@@ -60,9 +58,7 @@ Page({
   },
   initYao(id){
     if(id){
-      Post(api.Url.getOneYao,{
-        id:id
-      }).then(res=>{
+      Get(api.Url.getOneYao+id).then(res=>{
         console.log(res)
         if(res.code===0){
           this.setData({

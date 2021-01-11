@@ -59,6 +59,7 @@ Page({
         //初始化客户端
         Get(api.Url.getUserInfo)
             .then(res => {
+              console.log(res)
                 if (res.code === 0) {
                     this.setData({
                         user: res.data

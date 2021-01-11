@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b78f3a6c-44ef-4846-af8f-03b9264f9842" name="Default Changelist" comment="" />
+    <list default="true" id="b78f3a6c-44ef-4846-af8f-03b9264f9842" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/question/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/question/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/question/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/question/index.wxml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,36 +15,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/attention/index.wxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#view#0;n#view#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#view#0;n#view#0;n#view#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/grade/index.wxss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/info/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="55" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/info/index.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="360">
               <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="154" />
             </state>
           </provider>
@@ -64,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/community/index.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="144">
+              <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
               <folding>
                 <element signature="n#style#0;n#view#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#view#1;n#!!top" expanded="true" />
@@ -79,10 +56,51 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/question/index.wxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
+              <folding>
+                <element signature="n#style#0;n#view#0;n#form#0;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#view#0;n#form#0;n#view#0;n#!!top" />
+                <element signature="n#style#0;n#view#1;n#form#0;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#view#1;n#form#0;n#view#0;n#!!top" />
+                <element signature="n#style#0;n#view#2;n#form#0;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#view#2;n#form#0;n#view#0;n#!!top" />
+                <element signature="n#style#0;n#view#3;n#form#0;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#view#3;n#form#0;n#view#0;n#!!top" />
+                <element signature="n#style#0;n#view#4;n#form#0;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#view#4;n#form#0;n#view#0;n#!!top" />
+                <element signature="n#style#0;n#view#5;n#form#0;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#view#5;n#form#0;n#view#0;n#!!top" />
+                <element signature="n#style#0;n#view#6;n#form#0;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#view#6;n#form#0;n#view#0;n#!!top" />
+                <element signature="n#style#0;n#view#7;n#form#0;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#view#7;n#form#0;n#view#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/question/index.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/question/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="176" column="2" selection-start-line="176" selection-start-column="2" selection-end-line="180" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/resolve/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1109">
+            <state relative-caret-position="2304">
               <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
             </state>
           </provider>
@@ -91,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/question-item/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
+            <state relative-caret-position="1416">
               <caret line="59" column="44" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="44" />
             </state>
           </provider>
@@ -170,7 +188,6 @@
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/pages/my/questionEdit/index.wxml" />
         <option value="$PROJECT_DIR$/config/api.js" />
-        <option value="$PROJECT_DIR$/pages/question/index.wxml" />
         <option value="$PROJECT_DIR$/pages/index/index.wxml" />
         <option value="$PROJECT_DIR$/pages/gua/index.wxss" />
         <option value="$PROJECT_DIR$/pages/gua/index.wxml" />
@@ -183,6 +200,7 @@
         <option value="$PROJECT_DIR$/pages/attention/index.wxml" />
         <option value="$PROJECT_DIR$/pages/grade/index.wxml" />
         <option value="$PROJECT_DIR$/views/community/index.wxml" />
+        <option value="$PROJECT_DIR$/pages/question/index.wxml" />
       </list>
     </option>
   </component>
@@ -193,7 +211,6 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1080" />
     <option name="y" value="27" />
     <option name="width" value="1920" />
     <option name="height" value="1053" />
@@ -231,24 +248,7 @@
               <item name="wx-mini-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="wx-mini-app" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="attention" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wx-mini-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wx-mini-app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="grade" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wx-mini-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wx-mini-app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wx-mini-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wx-mini-app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="question" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -266,6 +266,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pages/guaDetail" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
@@ -343,14 +344,17 @@
       <workItem from="1606784754043" duration="23151000" />
       <workItem from="1606968974164" duration="33073000" />
       <workItem from="1607045416373" duration="46568000" />
+      <workItem from="1607222267575" duration="1199000" />
+      <workItem from="1607329877206" duration="122000" />
+      <workItem from="1607749279516" duration="684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208415000" />
+    <option name="totallyTimeSpent" value="210420000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1080" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.28114477" side_tool="true" weight="0.24933967" />
@@ -395,13 +399,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/gua/index.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/parser/parser.wxml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -439,13 +436,7 @@
         <state relative-caret-position="-792" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/about/home/index.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="86" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/about/home/index.wxml" />
     <entry file="file://$PROJECT_DIR$/views/gua/index.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
@@ -464,38 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
           <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/question/index.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="100" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="100" />
-          <folding>
-            <element signature="n#style#0;n#view#0;n#form#0;n#view#0;n#!!top" expanded="true" />
-            <element signature="n#view#0;n#form#0;n#view#0;n#!!top" />
-            <element signature="n#style#0;n#view#1;n#form#0;n#view#0;n#!!top" expanded="true" />
-            <element signature="n#view#1;n#form#0;n#view#0;n#!!top" />
-            <element signature="n#style#0;n#view#2;n#form#0;n#view#0;n#!!top" expanded="true" />
-            <element signature="n#view#2;n#form#0;n#view#0;n#!!top" />
-            <element signature="n#style#0;n#view#3;n#form#0;n#view#0;n#!!top" expanded="true" />
-            <element signature="n#view#3;n#form#0;n#view#0;n#!!top" />
-            <element signature="n#style#0;n#view#4;n#form#0;n#view#0;n#!!top" expanded="true" />
-            <element signature="n#view#4;n#form#0;n#view#0;n#!!top" />
-            <element signature="n#style#0;n#view#5;n#form#0;n#view#0;n#!!top" expanded="true" />
-            <element signature="n#view#5;n#form#0;n#view#0;n#!!top" />
-            <element signature="n#style#0;n#view#6;n#form#0;n#view#0;n#!!top" expanded="true" />
-            <element signature="n#view#6;n#form#0;n#view#0;n#!!top" />
-            <element signature="n#style#0;n#view#7;n#form#0;n#view#0;n#!!top" expanded="true" />
-            <element signature="n#view#7;n#form#0;n#view#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/question/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="176" column="2" selection-start-line="176" selection-start-column="2" selection-end-line="180" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -556,51 +515,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/gua/index.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/gua/index.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="n#style#0;n#view#0;n#view#0;n#view#0;n#van-tab#2;n#van-tabs#0;n#view#0;n#van-popup#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#view#1;n#view#0;n#van-tab#2;n#van-tabs#0;n#view#0;n#van-popup#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/gua/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2136">
-          <caret line="89" column="6" selection-start-line="87" selection-start-column="3" selection-end-line="89" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#5473#6165#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/gua/loadgua/index.wxss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/gua/loadgua/index.wxml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/gua/loadgua/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/gua/loadgua/index.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/gua/index.wxss" />
+    <entry file="file://$PROJECT_DIR$/pages/gua/index.wxml" />
+    <entry file="file://$PROJECT_DIR$/pages/gua/index.js" />
+    <entry file="file://$PROJECT_DIR$/pages/gua/loadgua/index.wxss" />
+    <entry file="file://$PROJECT_DIR$/pages/gua/loadgua/index.wxml" />
+    <entry file="file://$PROJECT_DIR$/pages/gua/loadgua/index.js" />
+    <entry file="file://$PROJECT_DIR$/pages/gua/loadgua/index.json" />
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -677,31 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/resolve/index.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="60" />
-          <folding>
-            <element signature="n#style#0;n#navigator#0;n#view#0;n#scroll-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#view#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/info/index.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="154" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/question-item/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="59" column="44" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/attention/index.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -716,10 +612,17 @@
     <entry file="file://$PROJECT_DIR$/pages/grade/index.wxss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/resolve/index.js">
+    <entry file="file://$PROJECT_DIR$/pages/info/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1109">
-          <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+        <state relative-caret-position="1032">
+          <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="55" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/info/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="154" />
         </state>
       </provider>
     </entry>
@@ -730,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/info/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="55" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/grade/index.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -744,15 +640,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/resolve/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2304">
+          <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/question-item/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1416">
+          <caret line="59" column="44" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/resolve/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="60" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#navigator#0;n#view#0;n#scroll-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/community/index.wxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        <state relative-caret-position="144">
+          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#view#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#scroll-view#0;n#view#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#pull-refresh-view#0;n#view#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/question/index.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/question/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="176" column="2" selection-start-line="176" selection-start-column="2" selection-end-line="180" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/question/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#view#0;n#form#0;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#view#0;n#form#0;n#view#0;n#!!top" />
+            <element signature="n#style#0;n#view#1;n#form#0;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#view#1;n#form#0;n#view#0;n#!!top" />
+            <element signature="n#style#0;n#view#2;n#form#0;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#view#2;n#form#0;n#view#0;n#!!top" />
+            <element signature="n#style#0;n#view#3;n#form#0;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#view#3;n#form#0;n#view#0;n#!!top" />
+            <element signature="n#style#0;n#view#4;n#form#0;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#view#4;n#form#0;n#view#0;n#!!top" />
+            <element signature="n#style#0;n#view#5;n#form#0;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#view#5;n#form#0;n#view#0;n#!!top" />
+            <element signature="n#style#0;n#view#6;n#form#0;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#view#6;n#form#0;n#view#0;n#!!top" />
+            <element signature="n#style#0;n#view#7;n#form#0;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#view#7;n#form#0;n#view#0;n#!!top" />
           </folding>
         </state>
       </provider>

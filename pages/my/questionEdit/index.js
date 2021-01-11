@@ -20,6 +20,7 @@ Page({
       nickName: '',
       avatarUrl: ''
     },
+    isEdit:false,
     questionId: null,
     client: null,
     imgList: [],
@@ -44,27 +45,13 @@ Page({
     }
   },
   checkUser() {
-    let userInfo = wx.getStorageSync("userInfo");
-
     //初始用户信息
     Get(api.Url.getUserInfo)
       .then(res => {
         if (res.code === 0) {
-          if (userInfo) {
-            this.setData({
-              userInfo: userInfo
-            })
-          } else {
-            this.setData({
-              modalName: "DialogModal"
-            })
-          }
-
-          res.data.nickName = userInfo.nickName;
-          res.data.avatarUrl = userInfo.avatarUrl;
-
+          console.log(res.data)
           this.setData({
-            client: res.data,
+            client: res.data.client,
           })
 
           //初始化分类
@@ -124,7 +111,7 @@ Page({
   },
   toEdit(){
     this.setData({
-      show:true
+      isEdit:true
     })
     let { imgList,questions } = this.data.questionAnswers.questionClient;
 
@@ -288,7 +275,7 @@ Page({
           success: () => {
             this.getQuestionAnswer(this.data.questionId)
             this.setData({
-              show:false
+              isEdit:false
             })
           }
         })

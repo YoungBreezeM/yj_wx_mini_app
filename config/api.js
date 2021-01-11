@@ -1,6 +1,6 @@
 
 //const ApiBaseUrl = 'https://www.geekera.cn';//生产上
-const ApiBaseUrl = 'http://10.3.31.76:8082/wx';//本地
+const ApiBaseUrl = 'http://10.2.44.228:8089/wx';//本地
 // const ApiBaseUrl = 'https://test.geekera.cn';//测试
 
 const Config = {
@@ -36,8 +36,8 @@ const Url = {
   message: ApiBaseUrl + "/message/",
   messageCount: ApiBaseUrl + "/message/"+"count/",
   grade: ApiBaseUrl + "/grade/",
-  getOneBaseGua: ApiBaseUrl + "/baseGua/",
-  getOneYao : ApiBaseUrl + "/yao/",
+  getOneBaseGua: ApiBaseUrl + "/gua/baseGua/",
+  getOneYao : ApiBaseUrl + "/gua/yao/",
   addIntegral: ApiBaseUrl + "/client/addIntegral/"
 }
 
